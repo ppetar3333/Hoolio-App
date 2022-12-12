@@ -261,12 +261,12 @@
   display: inline-block;
 
   @include breakpoint (mobile-and-tablet) {
-    height: 1470px;
+    height: 1411px;
     width: 3px;
     transform: rotate(0);
     position: absolute;
     top: 0;
     left: 80px;
-    margin-top: 155px;
+    margin-top: 184px;
   }
 }

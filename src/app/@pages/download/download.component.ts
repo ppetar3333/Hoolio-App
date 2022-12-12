@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'hoolio-strategy',
-  templateUrl: './strategy.component.html',
-  styleUrls: ['./strategy.component.scss']
+  selector: 'hoolio-download',
+  templateUrl: './download.component.html',
+  styleUrls: ['./download.component.scss']
 })
-export class StrategyComponent implements OnInit {
+export class DownloadComponent implements OnInit {
   public isProcessing: boolean = false;
 
   constructor() { }

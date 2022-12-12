@@ -1,0 +1,77 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+
+.side-nav__container {
+  position: fixed;
+  top: 353px;
+  right: 0;
+  z-index: 10;
+  font-weight: $font-weight-light;
+  background: $white;
+
+  @include breakpoint(mobile-and-tablet) {
+    background: none;
+  }
+
+  @include breakpoint(tablet) {
+    background: none;
+  }
+}
+
+.side-nav__list {
+  padding: 10px 0;
+}
+
+.side-nav__item {
+  text-align: right;
+  font-size: $font-size-s;
+  padding: 9px 15px 9px 40px;
+
+  @include breakpoint(mobile-and-tablet) {
+    padding: 0 5px 15px 0;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5px 15px 0;
+  }
+}
+
+.side-nav__link {
+  color: $gray;
+
+  @include breakpoint(mobile-and-tablet) {
+    :first-child {
+      display: none;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    :first-child {
+      display: none;
+    }
+  }
+}
+
+.side-nav__link--activeLink {
+  color: $white;
+  background: $redish-color;
+  padding: 8px 0 5px 60px;
+
+  @include breakpoint(mobile-and-tablet) {
+    background: none;
+  }
+
+  @include breakpoint(tablet) {
+    background: none;
+  }
+}
+
+.side-nav__dot {
+  width: 10px;
+  height: 10px;
+  background: $light-gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 5px;
+}

@@ -1,4 +1,4 @@
-<div class="home">
+<div class="home" [ngClass]="{'fade-in' : isProcessing}">
     <div class="home__wrapper">
         <div class="home__container">
             <div class="home__nav">
@@ -7,9 +7,7 @@
             <div class="home__header">
                 <hoolio-header></hoolio-header>
             </div>
-            <div class="horizontal-line">
-                <a href="#highlights"><span class="icon-arrow-down bi bi-arrow-down"></span></a>
-            </div>
+            <!--
             <div class="home__highlights">
                 <hoolio-highlights></hoolio-highlights>
             </div>
@@ -46,6 +44,15 @@
             <div class="horizontal-line">
                 <a href="#highlights"><span class="icon-arrow-down bi bi-arrow-down"></span></a>
             </div>
+            <div class="home__download">
+                <hoolio-download></hoolio-download>
+            </div>
+            <div class="scroll-top">
+                <a href="#intorduction"><span class="icon-arrow-up bi bi-arrow-up"></span></a>
+            </div>
+            <div class="home__footer">
+                <hoolio-footer></hoolio-footer>
+            </div> -->
         </div>
     </div>
 </div>

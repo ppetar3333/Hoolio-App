@@ -11,6 +11,16 @@
   }
 }
 
+.strategy {
+  opacity: 0.3;
+  transition: 0.5s all ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
 .strategy__contet-wrapper {
   @include center-flex-box;
 

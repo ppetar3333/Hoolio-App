@@ -1,0 +1,140 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+
+.download__section {
+  @include breakpoint(large-desktop) {
+    padding: 0 15px;
+  }
+}
+
+.download {
+  opacity: 0.3;
+  transition: 0.5s all ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+.download__contet-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.download__logo {
+  position: relative;
+  z-index: 1;
+}
+
+.download__list {
+  padding-left: 0;
+}
+
+.download__logo-title {
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+  font-weight: $font-weight-light;
+  letter-spacing: 3px;
+  color: $white;
+  max-width: 150px;
+}
+
+.download__img-wrapper {
+  display: flex;
+  align-items: $center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $darker-white;
+  margin-top: -50px;
+  overflow: hidden;
+  max-height: 34vh;
+
+  @include breakpoint(mobile) {
+    max-height: 350px;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+.download__img-catalog {
+  width: 56%;
+  margin-top: 192px;
+  margin-left: -88px;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+  }
+}
+
+.download__img-title {
+  max-width: 449px;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  line-height: 25px;
+  margin-right: 110px;
+  margin-top: 26px;
+
+  a {
+    color: $redish-color;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    font-size: $font-size-l;
+    margin: 0;
+  }
+
+  @include breakpoint(mobile) {
+    background: $light-gray;
+    padding: 15px;
+    text-align: $center;
+  }
+}
+
+.download__row-wrapper {
+  margin: 11px 0 26px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(mobile-and-tablet) {
+    display: block;
+  }
+}
+
+.download__item {
+  max-width: 340px;
+  font-size: $font-size-m;
+  line-height: 26px;
+  color: $gray;
+
+  a {
+    color: $gray;
+  }
+
+  span {
+    color: $redish-color;
+    margin-right: 5px;
+  }
+}
+
+.download__column-wrapper {
+  margin: 20px 0;
+  width: 32%;
+
+  @include breakpoint(tablet) {
+    margin: 25px 30px;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    width: 90%;
+  }
+}
+
+.download__column-title {
+  margin-bottom: 5px;
+  font-size: $font-size-xl;
+  color: $black;
+  font-weight: $font-weight-bold;
+}

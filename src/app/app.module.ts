@@ -32,6 +32,7 @@ import { HistoryComponent } from './@pages/history/history.component';
 import { StatementComponent } from './@pages/statement/statement.component';
 import { BusinessComponent } from './@pages/business/business.component';
 import { StrategyComponent } from './@pages/strategy/strategy.component';
+import { DownloadComponent } from './@pages/download/download.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { StrategyComponent } from './@pages/strategy/strategy.component';
     HistoryComponent,
     StatementComponent,
     BusinessComponent,
-    StrategyComponent
+    StrategyComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,
