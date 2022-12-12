@@ -2,7 +2,8 @@
 @import "../../../sources/abstract/variables";
 
 .header {
-  position: relative;
+  @include center-grid;
+  height: 100vh;
 
   @include breakpoint(mobile) {
     margin-top: -30px;
@@ -22,7 +23,6 @@
 .header__content-wrapper {
   @include center-flex-box;
 
-  position: relative;
   z-index: 1;
 }
 
@@ -63,6 +63,11 @@
   flex-direction: column;
   height: 235px;
   margin-top: -190px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
 
   @include breakpoint(mobile-and-tablet) {
     margin-top: -50px;

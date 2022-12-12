@@ -9,12 +9,19 @@
   background-position-y: center;
   background-size: cover;
   width: 100%;
-  min-height: 1150px;
+  min-height: 1250px;
+  opacity: 0.3;
+  transition: 0.5s all ease-in-out;
   position: relative;
 
   @include breakpoint(laptop-and-tablet) {
     height: 2000px;
   }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
 }
 
 .history__contet-wrapper {

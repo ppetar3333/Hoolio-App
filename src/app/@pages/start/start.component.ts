@@ -12,4 +12,11 @@ export class StartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public isProcessing: boolean = false;
+
+  public fadeIn(): void {
+    setTimeout(() => {
+      this.isProcessing = true;
+    }, 50);
+  }
 }
