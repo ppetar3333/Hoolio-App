@@ -29,6 +29,7 @@ import { SideNavComponent } from './@components/side-nav/side-nav.component';
 import { HighlightsComponent } from './@pages/highlights/highlights.component';
 import { AtAGlanceComponent } from './@pages/at-a-glance/at-a-glance.component';
 import { HistoryComponent } from './@pages/history/history.component';
+import { StatementComponent } from './@pages/statement/statement.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HistoryComponent } from './@pages/history/history.component';
     SideNavComponent,
     HighlightsComponent,
     AtAGlanceComponent,
-    HistoryComponent
+    HistoryComponent,
+    StatementComponent
   ],
   imports: [
     BrowserModule,
