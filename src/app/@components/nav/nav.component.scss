@@ -1,0 +1,119 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+
+.nav-sticky {
+  display: flex;
+  align-items: $center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-sticky__container {
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  margin-bottom: -170px;
+
+  @include breakpoint(mobile-and-tablet) {
+    height: 150px;
+    margin-bottom: -50px;
+  }
+
+  @include breakpoint(tablet) {
+    height: 200px;
+    margin-bottom: -161px;
+  }
+}
+
+.nav-sticky__center-side {
+  display: flex;
+  order: 1;
+  margin-bottom: 20px;
+}
+
+.nav-sticky__image {
+  margin-top: 46px;
+
+  @include breakpoint(tablet) {
+    margin-top: 39px;
+  }
+}
+
+.nav-sticky__left-side {
+  color: $white;
+  display: flex;
+  order: 2;
+}
+
+.nav-sticky__title {
+  font-size: 19px;
+  margin-top: -3px;
+
+  @include breakpoint(tablet) {
+    margin-top: 12px;
+  }
+}
+
+.nav-sticky__right-side {
+  display: none;
+
+  .icon-download {
+    color: $white;
+    padding: 0 5px;
+  }
+}
+
+.show-sticky-nav {
+  min-height: 100px;
+  background: $redish-color;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  .nav-sticky__left-side {
+    order: 1;
+    margin: $margin-lr-s;
+  }
+
+  .nav-sticky__center-side {
+    order: 2;
+    margin-left: 120px;
+    margin-bottom: 0;
+    margin-top: 5px;
+
+    @include breakpoint(mobile-and-tablet) {
+      margin-left: 20px;
+    }
+  }
+
+  .nav-sticky__image {
+    margin-top: 0;
+  }
+
+  .nav-sticky__title {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .nav-sticky__right-side {
+    order: 3;
+    display: flex;
+    margin: $margin-lr-s;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: $center;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+
+  @include breakpoint(phablet) {
+    font-size: 12px;
+  }
+}

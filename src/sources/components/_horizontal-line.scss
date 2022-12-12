@@ -1,0 +1,17 @@
+.horizontal-line {
+  width: 100%;
+  height: 30px;
+  background: $light-gray;
+  text-align: $center;
+
+  .icon-arrow-down {
+    background: $light-gray;
+    color: $redish-color;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+}
