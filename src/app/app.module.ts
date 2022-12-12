@@ -28,6 +28,7 @@ import { HomeComponent } from './@pages/home/home.component';
 import { SideNavComponent } from './@components/side-nav/side-nav.component';
 import { HighlightsComponent } from './@pages/highlights/highlights.component';
 import { AtAGlanceComponent } from './@pages/at-a-glance/at-a-glance.component';
+import { HistoryComponent } from './@pages/history/history.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AtAGlanceComponent } from './@pages/at-a-glance/at-a-glance.component';
     HomeComponent,
     SideNavComponent,
     HighlightsComponent,
-    AtAGlanceComponent
+    AtAGlanceComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
