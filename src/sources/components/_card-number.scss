@@ -1,0 +1,272 @@
+.card-number {
+  position: relative;
+
+  @include breakpoint (laptop-and-tablet) {
+    transform: rotate(90deg);
+    margin-top: 500px;
+    margin-left: -100px;
+  }
+
+  @include breakpoint (mobile-and-tablet) {
+    margin-left: -100px;
+  }
+}
+
+.wrapper-card {
+  @include breakpoint (laptop-and-tablet) {
+    @include center-grid;
+  }
+
+  @include breakpoint (mobile-and-tablet) {
+    @include center-grid;
+  }
+}
+
+.card-number__first {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__second {
+  position: absolute;
+  left: 107px;
+  top: 323px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__third {
+  position: absolute;
+  top: 23px;
+  left: 238px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__fourth {
+  position: absolute;
+  top: 245px;
+  left: 368px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__fifth {
+  position: absolute;
+  left: 518px;
+  top: -90px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__sixth {
+  position: absolute;
+  top: 166px;
+  left: 675px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__seventh {
+  position: absolute;
+  left: 829px;
+  top: -167px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card-number__eighth {
+  position: absolute;
+  top: 86px;
+  left: 964px;
+
+  @include breakpoint (mobile-and-tablet) {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 200px;
+  }
+}
+
+.card-number__wrapper {
+  background: $white;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+
+  @include breakpoint (laptop-and-tablet) {
+    transform: rotate(-90deg);
+  }
+
+  @include breakpoint (mobile-and-tablet) {
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+  }
+}
+
+.card-number__wrapper--even {
+  @include breakpoint (laptop-and-tablet) {
+    margin-top: -35px;
+  }
+}
+
+.card-number__number {
+  color: $redish-color;
+  display: block;
+  font-size: 24px;
+}
+
+.card-number__list {
+  line-height: 20px;
+  font-size: $font-size-m;
+  color: $gray;
+  width: 135px;
+}
+
+.card-number__list--special {
+  width: 180px;
+
+  @include breakpoint (mobile-and-tablet) {
+    width: 135px;
+  }
+}
+
+.card-number__item::before {
+  content: "•";
+  color: $redish-color;
+  display: inline-block;
+  width: 16px;
+}
+
+.card-number__logo {
+  position: absolute;
+}
+
+.card-number__logo--tc {
+  top: -95px;
+  left: 50px;
+
+  @include breakpoint (mobile-and-tablet) {
+    margin-left: 30px;
+  }
+}
+
+.card-number__logo--tr {
+  top: -95px;
+  left: 70px;
+
+  @include breakpoint (mobile-and-tablet) {
+    margin-left: 10px;
+  }
+}
+
+.card-number__logo--bc {
+  margin-top: 35px;
+  left: 50px;
+
+  @include breakpoint (mobile-and-tablet) {
+    margin-left: 30px;
+  }
+}
+
+.card-number__logo--bl {
+  margin-top: 35px;
+  left: 10px;
+
+  @include breakpoint (mobile-and-tablet) {
+    margin-left: 70px;
+  }
+}
+
+.card-number__line {
+  width: 2px;
+  height: 37px;
+  background: $redish-color;
+  display: inline-block;
+  position: absolute;
+  left: 28px;
+
+  @include breakpoint (mobile-and-tablet) {
+    width: 50px;
+    height: 2px;
+    left: 50px;
+  }
+}
+
+.card-number__line--bl {
+  top: 57px;
+
+  @include breakpoint (mobile-and-tablet) {
+    top: 27px;
+  }
+}
+
+.card-number__line--tr {
+  top: -35px;
+
+  @include breakpoint (mobile-and-tablet) {
+    top: 27px;
+  }
+}
+
+.card-number__img {
+  position: relative;
+  z-index: 4;
+
+  @include breakpoint (laptop-and-tablet) {
+    transform: rotate(-90deg);
+  }
+}
+
+.big-line {
+  width: 1025px;
+  height: 3px;
+  transform: rotate(-15deg);
+  margin-top: 160px;
+  margin-left: 30px;
+  background: $redish-color;
+  display: inline-block;
+
+  @include breakpoint (mobile-and-tablet) {
+    height: 1470px;
+    width: 3px;
+    transform: rotate(0);
+    position: absolute;
+    top: 0;
+    left: 80px;
+    margin-top: 155px;
+  }
+}

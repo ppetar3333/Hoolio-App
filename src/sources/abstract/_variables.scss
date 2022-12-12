@@ -1,3 +1,20 @@
+// colors
+$redish-color: #ef4b53;
+$black: #000;
+$white: #fff;
+$darker-white: #edeeee;
+$gray: #666;
+$light-gray: #dcddde;
+$light-gray-second: #9d9d9c;
+$dark-gray: #363636;
+$pink: #fac9cb;
+
+// font-family
+$font-weight-regular: 400;
+$font-weight-bold: 500;
+$font-weight-light: 300;
+$font-weight-black: 600;
+
 // font-size
 $font-size-s: 12px;
 $font-size-m: 14px;
@@ -5,31 +22,15 @@ $font-size-l: 16px;
 $font-size-xl: 18px;
 $font-size-xxl: 24px;
 
-// padding
-$padding-s: 10px;
-$padding-m: 20px;
-$padding-l: 30px;
-$padding-xl: 40px;
-$padding-xxl: 50px;
-
 // margin
-$margin-s: 10px;
-$margin-m: 20px;
-$margin-l: 30px;
-$margin-xl: 40px;
-$margin-xxl: 50px;
+$margin-tb-s: 10px 0;
+$margin-tb-m: 20px 0;
+$margin-tb-l: 30px 0;
+$margin-lr-s: 0 20px;
+$margin-all-s: 20px;
 
-// border
-$border-s: 1px;
-$border-m: 2px;
-$border-l: 5px;
-$border-xl: 10px;
-$border-xxl: 15px;
+// padding
+$padding-all-s: 20px;
 
-// colors
-$blue: blue;
-$red: red;
-$black: black;
-$white: white;
-$green: green;
-$gray: gray;
+// center items
+$center: center;

@@ -1,0 +1,26 @@
+.redish-box {
+  @include center-flex-box;
+
+  text-align: $center;
+  background: $redish-color;
+  width: 300px;
+  padding: 16px 0;
+}
+
+.redish-box--bottom {
+  padding: 23px 10px;
+}
+
+.redish-box__bottom-title {
+  font-size: $font-size-l;
+  font-weight: $font-weight-light;
+
+  a {
+    color: $white;
+  }
+
+  span {
+    display: inline-block;
+    padding-bottom: 23px;
+  }
+}

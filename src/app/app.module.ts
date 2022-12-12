@@ -20,10 +20,22 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './@components/nav/nav.component';
+import { HeaderComponent } from './@components/header/header.component';
+import { FooterComponent } from './@components/footer/footer.component';
+import { StartComponent } from './@pages/start/start.component';
+import { HomeComponent } from './@pages/home/home.component';
+import { SideNavComponent } from './@components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    HeaderComponent,
+    FooterComponent,
+    StartComponent,
+    HomeComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
