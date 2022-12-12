@@ -27,6 +27,7 @@ import { StartComponent } from './@pages/start/start.component';
 import { HomeComponent } from './@pages/home/home.component';
 import { SideNavComponent } from './@components/side-nav/side-nav.component';
 import { HighlightsComponent } from './@pages/highlights/highlights.component';
+import { AtAGlanceComponent } from './@pages/at-a-glance/at-a-glance.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HighlightsComponent } from './@pages/highlights/highlights.component';
     StartComponent,
     HomeComponent,
     SideNavComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    AtAGlanceComponent
   ],
   imports: [
     BrowserModule,
