@@ -31,6 +31,7 @@ import { AtAGlanceComponent } from './@pages/at-a-glance/at-a-glance.component';
 import { HistoryComponent } from './@pages/history/history.component';
 import { StatementComponent } from './@pages/statement/statement.component';
 import { BusinessComponent } from './@pages/business/business.component';
+import { StrategyComponent } from './@pages/strategy/strategy.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { BusinessComponent } from './@pages/business/business.component';
     AtAGlanceComponent,
     HistoryComponent,
     StatementComponent,
-    BusinessComponent
+    BusinessComponent,
+    StrategyComponent
   ],
   imports: [
     BrowserModule,
