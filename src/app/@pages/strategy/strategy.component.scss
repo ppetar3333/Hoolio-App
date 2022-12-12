@@ -1,0 +1,116 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+@import "../../../sources/components/bulletpoint";
+@import "../../../sources/components/image-text";
+@import "../../../sources/components/redish-box";
+@import "../../../sources/components/risks";
+
+.strategy__section {
+  @include breakpoint(large-desktop) {
+    padding: 0 13px;
+  }
+}
+
+.strategy__contet-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.strategy__logo-title {
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+  font-weight: $font-weight-light;
+  letter-spacing: 3px;
+  color: $white;
+}
+
+.strategy__desc-title-wrapper {
+  @include center-flex-box;
+
+  margin: 36px 15px 24px 0;
+}
+
+.strategy__desc-title {
+  width: 569px;
+  font-size: $font-size-xxl;
+  color: $black;
+  text-align: $center;
+}
+
+.strategy__buttons-wrapper {
+  border-bottom: 1px solid $redish-color;
+  display: flex;
+  align-items: $center;
+  justify-content: $center;
+  padding-top: 30px;
+}
+
+.strategy__button {
+  background: $darker-white;
+  color: $redish-color;
+  width: 33%;
+  padding: 30px 0;
+  margin: 0 3px;
+  font-size: 20px;
+  transition: 0.5s all ease;
+}
+
+.strategy__button--active {
+  background: $redish-color;
+  color: $white;
+}
+
+.strategy__bottom-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.strategy__row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $pink;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .bulletpoint__item {
+    padding: 0 31px;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    display: block;
+  }
+}
+
+.strategy__success {
+  margin-top: 50px;
+}
+
+.strategy__success-wrapper {
+  display: flex;
+  margin-top: 40px;
+
+  @include breakpoint(mobile-and-tablet) {
+    display: block;
+  }
+
+  .numbers__data {
+    width: 33%;
+
+    @include breakpoint(mobile-and-tablet) {
+      width: 80%;
+      margin-top: 10px;
+    }
+  }
+
+  .numbers__percentage {
+    font-size: $font-size-m;
+    max-width: 300px;
+  }
+}
