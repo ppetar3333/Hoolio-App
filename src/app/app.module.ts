@@ -26,6 +26,7 @@ import { FooterComponent } from './@components/footer/footer.component';
 import { StartComponent } from './@pages/start/start.component';
 import { HomeComponent } from './@pages/home/home.component';
 import { SideNavComponent } from './@components/side-nav/side-nav.component';
+import { HighlightsComponent } from './@pages/highlights/highlights.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SideNavComponent } from './@components/side-nav/side-nav.component';
     FooterComponent,
     StartComponent,
     HomeComponent,
-    SideNavComponent
+    SideNavComponent,
+    HighlightsComponent
   ],
   imports: [
     BrowserModule,
