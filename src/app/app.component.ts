@@ -13,6 +13,6 @@ export class AppComponent implements OnInit{
   ) {}
   
   public ngOnInit(): void {
-    this.router.navigate(['/Hoolio-App']);
+    this.router.navigate(['Hoolio-App/']);
   }
 }
