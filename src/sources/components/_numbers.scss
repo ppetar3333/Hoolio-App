@@ -1,0 +1,66 @@
+.numbers {
+  letter-spacing: 1px;
+}
+
+.numbers__data {
+  border-top: 1px solid $pink;
+  margin: 10px 30px 12px 0;
+
+  @include breakpoint(large-desktop) {
+    width: 270px;
+  }
+
+  @include breakpoint(desktop) {
+    width: 240px;
+  }
+
+  @include breakpoint (mobile-and-tablet) {
+    width: 90%;
+  }
+
+  @include breakpoint (tablet) {
+    width: 90%;
+  }
+}
+
+.numbers__title {
+  text-transform: uppercase;
+  color: $gray;
+  font-size: 12px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+  display: block;
+
+  @include breakpoint(mobile) {
+    font-size: 11px;
+  }
+}
+
+.numbers__price {
+  font-size: 34px;
+  margin-top: 7px;
+  padding-left: 2px;
+  font-weight: $font-weight-bold;
+  color: $redish-color;
+  display: block;
+
+  small {
+    font-size: $font-size-xl;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: $font-size-xl;
+  }
+}
+
+.numbers__percentage {
+  color: $gray;
+  margin-top: 8px;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-light;
+  display: block;
+
+  @include breakpoint(mobile) {
+    font-size: $font-size-m;
+  }
+}

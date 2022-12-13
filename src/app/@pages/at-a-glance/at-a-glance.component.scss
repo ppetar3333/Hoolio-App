@@ -1,0 +1,209 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+@import "../../../sources/components/card-number";
+@import "../../../sources/components/card";
+
+.glance {
+  @include center-grid;
+  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.3;
+  transition: 0.5s all ease-in-out;
+
+  .container {
+    @include breakpoint(tablet) {
+      padding: 0 23px;
+    }
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+.glance__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 31px;
+
+  .open-txt,
+  .close-txt {
+    color: $white;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+  }
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+  }
+}
+
+.glance__card-numbers {
+  position: relative;
+  z-index: 1;
+  margin-left: 49px;
+  margin-top: 22px;
+
+  @include breakpoint(mobile-and-tablet) {
+    margin-left: 20px;
+    max-width: 60%;
+  }
+
+  .numbers__price {
+    margin-top: 4px;
+  }
+}
+
+.glance__content-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.glance__logo-title {
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+  font-weight: $font-weight-light;
+  letter-spacing: 3px;
+  color: $white;
+}
+
+.strength {
+  @include breakpoint(large-desktop) {
+    margin: -15px 0 14px 14px;
+  }
+}
+
+.strength__main-title {
+  font-weight: $font-weight-bold;
+  color: $redish-color;
+  font-size: $font-size-xxl;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.strength__heading-wrapper {
+  margin-top: 50px;
+}
+
+.strength__main-desc {
+  max-width: 673px;
+  font-size: $font-size-m;
+  line-height: 22px;
+  color: $gray;
+  font-weight: $font-weight-light;
+  margin-bottom: 20px;
+}
+
+.strength__content-top {
+  @include breakpoint(large-desktop) {
+    margin-top: -40px;
+  }
+}
+
+.strength__content-left {
+  @include breakpoint(large-desktop) {
+    margin-left: 11px;
+  }
+}
+
+.strength__elements-wrapper {
+  margin-bottom: 29px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.strength__content {
+  display: flex;
+  margin-bottom: 10px;
+
+  @include breakpoint(mobile-and-tablet) {
+    margin-top: 10px;
+    border-bottom: 2px solid $pink;
+  }
+}
+
+.strength__text-wrapper {
+  @include breakpoint(mobile-and-tablet) {
+    margin-top: 8px;
+    position: relative;
+
+    .open-txt {
+      margin-top: -10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.strength__image,
+.strength__desc {
+  margin-right: 20px;
+}
+
+.strength__image {
+  @include breakpoint(mobile-and-tablet) {
+    margin-bottom: 10px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.strength__title,
+.strength__desc {
+  line-height: 22px;
+}
+
+.strength__title {
+  font-size: $font-size-m;
+  font-weight: $font-weight-bold;
+  margin-right: 20px;
+  display: inline-block;
+
+  @include breakpoint(mobile-and-tablet) {
+    font-size: $font-size-m;
+  }
+}
+
+.strength__desc {
+  font-size: $font-size-m;
+  color: $gray;
+
+  @include breakpoint(mobile-and-tablet) {
+    margin: $margin-tb-s;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+  }
+}
+
+.strength__bottom-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.strength__title {
+  color: black;
+}

@@ -1,0 +1,40 @@
+.values {
+  width: 65%;
+  background: $redish-color;
+  color: $white;
+  padding: $padding-all-s;
+
+  @include breakpoint (mobile-and-tablet) {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+}
+
+.values__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.values__main-title {
+  margin-bottom: 25px;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-light;
+  margin-left: 4px;
+}
+
+.values__image {
+  margin-right: 20px;
+  width: 33px;
+  height: 33px;
+  display: block;
+}
+
+.values__title {
+  font-size: $font-size-m;
+  font-weight: $font-weight-bold;
+}
+
+.values__description {
+  font-size: $font-size-m;
+  font-weight: $font-weight-light;
+}

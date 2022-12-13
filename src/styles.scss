@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+@import "../src/sources/base/reset";
+@import '../src/sources/base/typography';
+@import "../src/sources/abstract/variables";
+@import "../src/sources/abstract/mixins";
+@import "../src/sources/utilities/container";
+@import "../src/sources/components/spinner";
+@import '../src/sources/components/horizontal-line';
+@import '../src/sources/components/redish-box';
+@import '../src/sources/components/numbers';
+@import '../src/sources/components/values';
+@import '../src/sources/components/card';
+@import '../src/sources/components/image-text';
+@import '../src/sources/components/bulletpoint';
+@import '../src/sources/components/card-number';
+@import '../src/sources/components/buttons';
+@import '../src/sources/components/risks';

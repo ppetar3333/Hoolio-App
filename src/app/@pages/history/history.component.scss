@@ -1,0 +1,95 @@
+@import "../../../sources/abstract/mixins";
+@import "../../../sources/abstract/variables";
+@import "../../../sources/components/card-number";
+@import "../../../sources/components/card";
+
+.history {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 1250px;
+  opacity: 0.3;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  height: 100vh;
+
+  @include breakpoint(laptop-and-tablet) {
+    height: 2000px;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    height: 2500px;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+.history__contet-wrapper {
+  @include center-flex-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.history__wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.history__logo-title {
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+  font-weight: $font-weight-light;
+  letter-spacing: 3px;
+  color: $white;
+}
+
+.history__desc-wrapper {
+  @include center-flex-box;
+
+  margin: $margin-tb-l;
+}
+
+.history__desc-text {
+  color: $white;
+  max-width: 582px;
+  text-align: $center;
+  font-size: $font-size-xxl;
+}
+
+.history__redish-box {
+  background-color: $redish-color;
+  max-width: 470px;
+  margin-right: 710px;
+
+  @include breakpoint(laptop-and-tablet) {
+    margin-right: 0;
+  }
+
+  @include breakpoint(mobile-and-tablet) {
+    margin-right: 0;
+  }
+}
+
+.history__redish-box-desc {
+  padding: 0 20px;
+  margin: $margin-tb-s;
+  font-size: $font-size-m;
+  color: $white;
+  line-height: 18px;
+}
+
+.history__redish-box-desc:first-child {
+  padding-top: 15px;
+}
+
+.history__redish-box-desc:last-child {
+  padding-bottom: 15px;
+}
