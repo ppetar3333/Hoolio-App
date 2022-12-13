@@ -25,6 +25,10 @@
   transform-origin: 12px 25px;
 }
 
+.close-glance {
+  transition: 0.3s all;
+}
+
 .scroll-top {
   display: flex;
   align-items: $center;
