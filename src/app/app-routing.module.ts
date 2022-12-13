@@ -12,7 +12,7 @@ import { StrategyComponent } from './@pages/strategy/strategy.component';
 
 const routes: Routes = [
   {
-    path: 'Hoolio-App/',
+    path: '',
     component: HomeComponent
   },
   {
@@ -45,7 +45,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'Hoolio-App/',
+    redirectTo: '',
     pathMatch: 'full'
   },
 ];
