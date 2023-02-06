@@ -110,6 +110,10 @@
   margin: 0 3px;
   font-size: 20px;
   transition: 0.5s all ease;
+
+  @media (min-width: 320px) and (max-width: 600px) {
+    height: 120px;
+  }
 }
 
 .strategy__button--active {
